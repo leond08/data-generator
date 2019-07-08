@@ -1,0 +1,15 @@
+17:39:03.862 [Thread-0] INFO  ngp.data.encryption.JobPoller - encrypting files...
+17:39:03.873 [Thread-0] ERROR ngp.data.encryption.JobPoller - Error processing file:
+java.lang.NullPointerException: null
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at java.util.Arrays$ArrayList.<init>(Arrays.java:3813)
+	at java.util.Arrays.asList(Arrays.java:3800)
+	at ngp.data.encryption.CSVReader.getHeaderAsList(CSVReader.java:142)
+	at ngp.data.encryption.JobPoller.processFile(JobPoller.java:67)
+	at ngp.data.encryption.JobPoller.run(JobPoller.java:33)
+	at java.lang.Thread.run(Thread.java:748)
+17:39:03.873 [Thread-0] ERROR ngp.data.encryption.JobPoller - Error encountered while queing jobs:
+java.lang.NullPointerException: null
+	at ngp.data.encryption.JobPoller.processFile(JobPoller.java:93)
+	at ngp.data.encryption.JobPoller.run(JobPoller.java:33)
+	at java.lang.Thread.run(Thread.java:748)
